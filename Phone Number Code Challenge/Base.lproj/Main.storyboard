@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Phone Number View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="PhoneNumberViewController" id="BYZ-38-t0r" customClass="PhoneNumberViewController" customModule="PhoneNumberCodeChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vkS-D4-0qh">
+                                <rect key="frame" x="47" y="318" width="281" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3AD-VU-VWu"/>
+                                    <constraint firstAttribute="width" constant="281" id="Zij-O0-DK3"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone.png" translatesAutoresizingMaskIntoConstraints="NO" id="C4n-tz-zHt">
+                                <rect key="frame" x="127" y="104" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="3PY-xZ-ong"/>
+                                    <constraint firstAttribute="width" constant="120" id="P5S-yP-c33"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your phone number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0b-Hv-1EV">
+                                <rect key="frame" x="60" y="257" width="254" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="RRJ-Yt-Y99"/>
+                                    <constraint firstAttribute="width" constant="254" id="kx2-ed-lj7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJR-UE-nwg" customClass="CircleButton" customModule="PhoneNumberCodeChallenge" customModuleProvider="target">
+                                <rect key="frame" x="157.5" y="387" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Okw-CT-Hpk"/>
+                                    <constraint firstAttribute="width" constant="60" id="PJp-jk-Dqe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="GO">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="goButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WQK-F2-q4o"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9rb-b5-oMR">
+                                <rect key="frame" x="84" y="467" width="208" height="32"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Area Code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lfu-C4-TsE">
+                                        <rect key="frame" x="0.0" y="0.0" width="104" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="104" id="AYw-TD-1lI"/>
+                                            <constraint firstAttribute="height" constant="32" id="ETI-Rx-uEX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3p-3L-X28">
+                                        <rect key="frame" x="104" y="0.0" width="104" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="XUf-mP-gY3"/>
+                                            <constraint firstAttribute="width" constant="104" id="ntM-1X-hbE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="208" id="eaF-cZ-ugW"/>
+                                    <constraint firstAttribute="height" constant="32" id="xrh-O8-ooF"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eyE-Ee-pyS">
+                                <rect key="frame" x="83" y="509" width="208" height="32"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ph. #" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUH-cC-gMf">
+                                        <rect key="frame" x="0.0" y="0.0" width="104" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="0md-VS-k0y"/>
+                                            <constraint firstAttribute="width" constant="104" id="Ip8-aG-L12"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHZ-KC-ynw">
+                                        <rect key="frame" x="104" y="0.0" width="104" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="104" id="Wgc-S6-2xU"/>
+                                            <constraint firstAttribute="height" constant="32" id="i7F-cj-qKq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="208" id="Q4V-9n-Q5Z"/>
+                                    <constraint firstAttribute="height" constant="32" id="u0Y-6T-Nph"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C1W-Uj-tFz">
+                                <rect key="frame" x="83" y="551" width="208" height="32"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="F. Ph. #" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGl-2j-4Ha">
+                                        <rect key="frame" x="0.0" y="0.0" width="104" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="104" id="Uw6-oW-unm"/>
+                                            <constraint firstAttribute="height" constant="32" id="yHT-uh-djl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUs-dt-XaD">
+                                        <rect key="frame" x="104" y="0.0" width="104" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="104" id="HK8-qB-nkU"/>
+                                            <constraint firstAttribute="height" constant="32" id="sLK-02-vDJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="208" id="eZs-rA-Cm6"/>
+                                    <constraint firstAttribute="height" constant="32" id="kRK-xh-Xfw"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="u0b-Hv-1EV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4SG-x5-Cv5"/>
+                            <constraint firstItem="yJR-UE-nwg" firstAttribute="top" secondItem="vkS-D4-0qh" secondAttribute="bottom" constant="39" id="8eN-Hg-gjt"/>
+                            <constraint firstItem="vkS-D4-0qh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EtG-fC-kZ2"/>
+                            <constraint firstItem="C1W-Uj-tFz" firstAttribute="top" secondItem="eyE-Ee-pyS" secondAttribute="bottom" constant="10" id="HPX-Oq-X01"/>
+                            <constraint firstItem="9rb-b5-oMR" firstAttribute="top" secondItem="yJR-UE-nwg" secondAttribute="bottom" constant="20" id="Hdu-TS-4KB"/>
+                            <constraint firstItem="9rb-b5-oMR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WDp-ck-BYa"/>
+                            <constraint firstItem="C4n-tz-zHt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wl6-mB-fBQ"/>
+                            <constraint firstItem="yJR-UE-nwg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j5i-7i-Emj"/>
+                            <constraint firstItem="C4n-tz-zHt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="84" id="j92-VK-W9s"/>
+                            <constraint firstItem="eyE-Ee-pyS" firstAttribute="top" secondItem="9rb-b5-oMR" secondAttribute="bottom" constant="10" id="kfb-jJ-X7R"/>
+                            <constraint firstItem="eyE-Ee-pyS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nHh-xt-CbL"/>
+                            <constraint firstItem="vkS-D4-0qh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oC5-Vl-Xcs"/>
+                            <constraint firstItem="C1W-Uj-tFz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ohp-OK-dDw"/>
+                            <constraint firstItem="u0b-Hv-1EV" firstAttribute="top" secondItem="C4n-tz-zHt" secondAttribute="bottom" constant="33" id="u3s-bw-tJ1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="areaCodeLbl" destination="U3p-3L-X28" id="t0o-cz-POx"/>
+                        <outlet property="formattedPhoneNumberLbl" destination="hUs-dt-XaD" id="fiP-w0-mMv"/>
+                        <outlet property="phoneNumberLbl" destination="sHZ-KC-ynw" id="leQ-Vw-B9L"/>
+                        <outlet property="phoneNumberTextField" destination="vkS-D4-0qh" id="eJq-68-1Md"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48.799999999999997" y="-107.49625187406298"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="phone.png" width="300" height="300"/>
+    </resources>
+</document>
